@@ -74,4 +74,4 @@
 [ staging ] ──▶ Triggers CD: Reads STAGING_ENV_FILE -> Builds `ml-app:staging` Docker image
     │ (Merge PR)
     ▼
-[ main ] ──▶ Triggers CD: Reads PRODUCTION_ENV_FILE -> Builds `ml-app:production` Docker image
+[ main ] ──▶ Triggers CD: Reads PRODUCTION_ENV_FILE -> Builds `ml-app:production` Docker image- [x] test: verify staging to main deployment
