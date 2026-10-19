@@ -196,3 +196,4 @@ curl http://127.0.0.1:8000/health          # {"status":"ok","model_loaded":true}
 - `data-v2`（清洗后数据）仍保留了约 5% 的标签翻转噪声，规则清洗无法修复，因此 F1 反而低于使用干净数据的 `data-v1`。
 - Azure SAS token 有有效期（当前至 2026-12-12），过期后需要重新生成并更新 `.dvc/config.local`。
 - 训练数据与模型都较小，属于课程作业规模；生产化还需要数据校验、模型监控与灰度发布。
+- [x] init: CI first run
