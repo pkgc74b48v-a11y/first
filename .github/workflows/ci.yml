@@ -6,6 +6,7 @@ on:
 
 jobs:
   test-and-lint:
+    name: Lint & Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,6 +20,7 @@ jobs:
       - run: pytest -v
 
   docker-build:
+    name: Built & Smoke-test Image
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
